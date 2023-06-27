@@ -2,26 +2,22 @@
 
 using namespace std;
 
-enum year {
-    Jan,
-    Feb,
-    Mar,
-    Apr,
-    May,
-    Jun,
-    Jul,
-    Aug,
-    Sep,
-    Oct,
-    Nov,
-    Dec
+struct hitung {
+    int p,l,r,t,Lp,Ll,Vk,Vb;
 };
 int main()
 {
-    int i;
-
-    // Traversing the enum year
-    for (i = Jan; i <= Dec; i++)
-        cout << i << endl;
-    return 0;
+    struct hitung jumlah;
+    jumlah.p = 5;
+    jumlah.l = 12;
+    jumlah.r = 7;
+    jumlah.t = 10;
+    jumlah.Lp = jumlah.p * jumlah.l;
+    jumlah.Vk = 1/3 * 3,14 * jumlah.r * jumlah.r * jumlah.t;
+    jumlah.Ll = 22/7 * jumlah.r * jumlah.r;
+    jumlah.Vb = 4/3 * 3,14 * jumlah.r * jumlah.r * jumlah.r;
+    cout << jumlah.Lp << endl;
+    cout << jumlah.Ll << endl;
+    cout << jumlah.Vk << endl;
+    cout << jumlah.Vb << endl;
 }
