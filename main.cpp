@@ -2,26 +2,24 @@
 
 using namespace std;
 
-enum year {
-    Jan,
-    Feb,
-    Mar,
-    Apr,
-    May,
-    Jun,
-    Jul,
-    Aug,
-    Sep,
-    Oct,
-    Nov,
-    Dec
+struct Sepeda {
+    string merk,type;
+    int th,hg;
 };
 int main()
 {
-    int i;
+    Sepeda *ptr, a;
+    ptr = &a;
+    cout << "enter Merk : ";
+    cin >> (*ptr).merk;
+    cout << "enter Type : ";
+    cin >> (*ptr).type;
+    cout << "enter Tahun : ";
+    cin >> (*ptr).th;
+    cout << "enter Harga : ";
+    cin >> (*ptr).hg;
+    cout << endl;
 
-    // Traversing the enum year
-    for (i = Jan; i <= Dec; i++)
-        cout << i << endl;
+    cout << "Merk : " << (*ptr).merk << " Type : " << (*ptr).type << " Tahun : " << (*ptr).th << " Harga : " << (*ptr).hg << endl;
     return 0;
 }
